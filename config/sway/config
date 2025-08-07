@@ -261,14 +261,14 @@ bindsym $mod+F6 exec "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+; pkill -R
 bindsym $mod+F5 exec "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; pkill -RTMIN+8 waybar"
 bindsym $mod+F7 exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -RTMIN+8 waybar"
 
-bindsym $mod+Shift+F2 exec --no-startup-id systemctl reboot
-bindsym $mod+Shift+F1 exec --no-startup-id systemctl poweroff
+bindsym $mod+Shift+F2 exec --no-startup-id "loginctl reboot"
+bindsym $mod+Shift+F1 exec --no-startup-id "loginctl poweroff"
 
 # Brightness
-bindsym XF86MonBrightnessDown exec light -U 10
-bindsym XF86MonBrightnessUp exec light -A 10
-bindsym $mod+F4 exec light -A 10
-bindsym $mod+F3 exec light -U 10
+bindsym XF86MonBrightnessDown exec brillo -U 10
+bindsym XF86MonBrightnessUp exec brillo -A 10
+bindsym $mod+F4 exec brillo -A 10
+bindsym $mod+F3 exec brillo -U 10
 
 #autostart applications
 exec --no-startup-id nm-applet
