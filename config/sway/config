@@ -283,7 +283,7 @@ exec --no-startup-id dunst
 set $menu wofi --show drun  -i | xargs swaymsg exec --
 
 # Launch your browser:
-bindsym $mod+shift+return exec brave-browser
+bindsym $mod+shift+return exec flatpak run org.brave.Browser
 
 # Open a file manager:
 bindsym ctrl+$mod+return exec thunar
