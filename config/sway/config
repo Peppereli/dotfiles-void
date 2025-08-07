@@ -21,7 +21,7 @@ input type:keyboard {
     # You can add other keyboard settings here if you like, e.g.:
     xkb_numlock enabled
     repeat_delay 300
-    repeat_rate 30
+    repeat_rate 50
 }
 input "type:pointer" {
     accel_profile "flat"
