@@ -58,7 +58,7 @@ exec_always --no-startup-id "gsettings set org.gnome.desktop.interface text-scal
 exec_always {
     gsettings set $gnome_schema gtk-theme "Breeze-Dark"
     gsettings set $gnome_schema icon-theme "breeze-dark"
-    gsettings set $gnome_schema cursor-theme "breeze_cursors"
+    gsettings set $gnome_schema cursor-theme "breeze"
     gsettings set $gnome_schema font-name "JetBrains Mono Nerd Font 10"
     gsettings set $gnome_schema color-scheme "prefer-dark" # For dark mode preference
 }
